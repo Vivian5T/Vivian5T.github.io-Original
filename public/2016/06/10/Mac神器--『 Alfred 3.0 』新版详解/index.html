@@ -1,0 +1,870 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic|Georgia, sans:300,300italic,400,400italic,700,700italic|Montserrat:300,300italic,400,400italic,700,700italic|Input Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="效率工具,神器," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="这是一篇详细介绍 Mac 效率启动器 Alfred 3.0 新版的文章，如果你之前不怎么熟悉 Alfred，建议阅读本文之前先阅读《Alfred 详解与使用技巧》这篇文章，这会让你更快弄懂 3.0 新版的各项新特性和改进。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mac神器--『 Alfred 3.0 』新版详解">
+<meta property="og:url" content="https://Vivian5T.github.io/2016/06/10/Mac神器--『 Alfred 3.0 』新版详解/index.html">
+<meta property="og:site_name" content="5TONG">
+<meta property="og:description" content="这是一篇详细介绍 Mac 效率启动器 Alfred 3.0 新版的文章，如果你之前不怎么熟悉 Alfred，建议阅读本文之前先阅读《Alfred 详解与使用技巧》这篇文章，这会让你更快弄懂 3.0 新版的各项新特性和改进。">
+<meta property="og:image" content="http://o88okth1x.bkt.clouddn.com/imac_26ce07ec70126ebf3394a133b654f970.png-960.jpg">
+<meta property="og:image" content="http://o88okth1x.bkt.clouddn.com/imac_6982758716e81d1991c2fcb20e037f3c.png-960.jpg">
+<meta property="og:image" content="http://o88okth1x.bkt.clouddn.com/imac_be86dd816e6b951510de2da21b20af77.png-960.jpg">
+<meta property="og:image" content="http://o88okth1x.bkt.clouddn.com/imac_485d200fe8f1d7164168344f4e1de39e.png-960.jpg">
+<meta property="og:image" content="http://o88okth1x.bkt.clouddn.com/imac_1c4ad868366424d36f38fda0c0bc52fe.png-960.jpg">
+<meta property="og:image" content="http://o88okth1x.bkt.clouddn.com/imac_b0751625d43aeb317b7e14c6d48aff4d.png-960.jpg">
+<meta property="og:image" content="http://o88okth1x.bkt.clouddn.com/imac_84bdd763c70fbafbb0243c02e122cb7f.png-960.jpg">
+<meta property="og:image" content="http://o88okth1x.bkt.clouddn.com/imac_322e838cf6a8769d4c33788f48f43998.png-960.jpg">
+<meta property="og:updated_time" content="2016-06-11T09:44:47.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mac神器--『 Alfred 3.0 』新版详解">
+<meta name="twitter:description" content="这是一篇详细介绍 Mac 效率启动器 Alfred 3.0 新版的文章，如果你之前不怎么熟悉 Alfred，建议阅读本文之前先阅读《Alfred 详解与使用技巧》这篇文章，这会让你更快弄懂 3.0 新版的各项新特性和改进。">
+<meta name="twitter:image" content="http://o88okth1x.bkt.clouddn.com/imac_26ce07ec70126ebf3394a133b654f970.png-960.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> Mac神器--『 Alfred 3.0 』新版详解 | 5TONG </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?45612ffb89b73b8694efb5fdc68f3d0d";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">5TONG</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">Record&Note</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Mac神器--『 Alfred 3.0 』新版详解
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-06-10T00:14:25+08:00" content="2016-06-10">
+              2016-06-10
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Mac-App分享/" itemprop="url" rel="index">
+                    <span itemprop="name">Mac App分享</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Mac-App分享/日常相关/" itemprop="url" rel="index">
+                    <span itemprop="name">日常相关</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/06/10/Mac神器--『 Alfred 3.0 』新版详解/" class="leancloud_visitors" data-flag-title="Mac神器--『 Alfred 3.0 』新版详解">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://o88okth1x.bkt.clouddn.com/imac_26ce07ec70126ebf3394a133b654f970.png-960.jpg" alt=""></p>
+<blockquote>
+<p>这是一篇详细介绍 Mac 效率启动器 Alfred 3.0 新版的文章，如果你之前不怎么熟悉 Alfred，建议阅读本文之前先阅读<a href="http://sspai.com/27900" target="_blank" rel="external">《Alfred 详解与使用技巧》</a>这篇文章，这会让你更快弄懂 3.0 新版的各项新特性和改进。</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="效率神器"><a href="#效率神器" class="headerlink" title="效率神器"></a>效率神器</h2><p>对大多数 Mac 用户来说，有不少 Mac 软件是无论如何都会被「安利」的，甚至在某种程度上它们会成为很多人购买 Mac 的理由。如果你是少数派的老读者的话，相信你已经无数次在这里看到过它们的名字，比如 <strong>Alfred，OmniFocus，Ulysses</strong>……</p>
+<p>这些 Mac 软件都有着无数竞品，但它们是各自领域中当之无愧的「王者」应用。OmniFocus 是 GTD 工具中最早步上神坛的软件，<strong>Ulysses</strong> 则是在近年中占据了Markdown写作应用的头把交椅，而<strong>Alfred</strong>却是Mac上<strong>最好的效率软件</strong>。</p>
+<blockquote>
+<p>“I used to be a Windows user, but now I buy a Mac for Alfred.”</p>
+</blockquote>
+<p>作为Mac上最强大的效率工具，<strong>Alfred</strong>早已不仅仅是最开始的快速启动与搜索工具，它的 <code>workflow</code>扩展功能，让它成为了一个拥有无限自动化潜力的「工具台」软件，你可以用它来实现你的一切有关自动化的想法。下面这张官方图中标出了<strong>Alfred</strong>的所有功能，从中你可以直观的感受到它的强大。</p>
+<p><img src="http://o88okth1x.bkt.clouddn.com/imac_6982758716e81d1991c2fcb20e037f3c.png-960.jpg" alt=""></p>
+<p>前段时间，<strong>Alfred</strong>正式更新了它的<strong>3.0</strong>版本，带来了更为强大的功能和对普通用户更为友好的设计，让Mac Power User与普通用户的距离变得更近了——在这个新版本里，除了全新的剪贴板与快捷输入功能以外，<strong>Alfred</strong>最为核心的<code>Workflow</code>扩展功能被开发商进行了更为深度的模块化设计，把很多原本需要通过写代码才能实现的功能直接制作成了模块，用户只需要简单的设置就可以快速的设计出一个全新的<code>Workflow</code>。</p>
+<blockquote>
+<p>瑞士军刀并不万能，万能的是一把可以无限添加部件的瑞士军刀。</p>
+</blockquote>
+<h2 id="终于自由的自定义主题"><a href="#终于自由的自定义主题" class="headerlink" title="终于自由的自定义主题"></a>终于自由的自定义主题</h2><p>在 <strong>Alfred 2</strong> 中，自定义主题一直都是一个非常鸡肋的功能。</p>
+<p>我们如果要自己设置一个<strong>Alfred</strong>的主题，只能够通过<code>Command</code>、<code>Ctrl</code>、<code>Option</code> 三个键与鼠标左键结合，通过点击循环更改字体，字体大小与结果列表的行间距，且这三个属性的可选范围是被限制在几个预置的选项中的。这样操作非常的麻烦且可选范围狭窄，并不能真正意义上自定义出用户想要的主题。</p>
+<p>在 <strong>Alfred 3</strong> 中，开发商终于将这个功能做到了完善，我们可以使用任意 Mac 中已安装的字体，结果列表的间距以及字体的大小也可以通过拖动来设置成任意的大小，而除了原本的颜色和透明度自定义以外，开发商可还添加了毛玻璃模糊程度调节选项。</p>
+<p><img src="http://o88okth1x.bkt.clouddn.com/imac_be86dd816e6b951510de2da21b20af77.png-960.jpg" alt=""></p>
+<p><em>这一次，你终于可以真正的自由修改你的 Alfred 的界面了。</em></p>
+<h2 id="支持类型更丰富的剪贴板增强"><a href="#支持类型更丰富的剪贴板增强" class="headerlink" title="支持类型更丰富的剪贴板增强"></a>支持类型更丰富的剪贴板增强</h2><p>剪贴板记录扩展工具，长期以来都是 Mac 上的一大类软件，且往往售价也都不便宜，之前 Alfred 一直都只是有一个比较基础的剪贴板功能，仅支持文字的复制纪录，并无法代替传统的剪贴板软件。</p>
+<p>而这次 <strong>Alfred 3</strong> 带来了全新的剪贴板功能，正式向传统剪贴板工具吹响了进攻的号角——<strong>我要开始抢你们的饭碗了。</strong></p>
+<p><img src="http://o88okth1x.bkt.clouddn.com/imac_485d200fe8f1d7164168344f4e1de39e.png-960.jpg" alt=""></p>
+<p><strong>Alfred 3</strong> 的剪贴板扩展支持所有类型文件的复制历史保存，从文字到 <code>Doc</code> 文档，从 <code>Gif</code> 图片到 <code>.dmg</code> 文件，你的所有复制历史都会被忠实的记录下来。</p>
+<p>除了强大的记录能力，<strong>Alfred 3</strong> 的剪贴板功能还有着强大的预览能力，文字类型的复制历史除了显示内容之外还会显示一个字数统计，图像类型的复制历史都是直接可以在剪贴板历史中进行预览的1，而对于文档类复制历史如 <code>PDF</code> ，则更是提供了直接预览，并支持在预览中查看并翻页。</p>
+<p><img src="http://o88okth1x.bkt.clouddn.com/imac_1c4ad868366424d36f38fda0c0bc52fe.png-960.jpg" alt=""></p>
+<h2 id="野心勃勃的短语快捷输入"><a href="#野心勃勃的短语快捷输入" class="headerlink" title="野心勃勃的短语快捷输入"></a>野心勃勃的短语快捷输入</h2><p>在 <strong>Alfred 2</strong> 中，<code>Snippets</code>（短语）这个功能就有存在，不过是作为剪贴板的附属功能而已，你只能通过剪贴板来调用，相比 TextExpander 这类老牌键盘加速软件，实在是差了不止一点半点。</p>
+<p><strong>Alfred 3</strong> 将这个功能单独剥离了出来，并带来了「自动扩展」能力，现在你可以通过给 <code>Snippets</code> 设定的关键词，直接在任意软件中通过输入关键词来触发文本自动扩展，实现的效果与 TextExpander 等老牌键盘加速软件的基础功能已经无异。</p>
+<p><img src="http://o88okth1x.bkt.clouddn.com/imac_b0751625d43aeb317b7e14c6d48aff4d.png-960.jpg" alt=""></p>
+<p>不过 <strong>Alfred</strong> 的开发商看起来还是对这个功能遮遮掩掩，想要使用它需要费一番手脚。<code>Sippets</code> 自动扩展功能在 <strong>Alfred 3</strong> 默认关闭，你需要打开 <strong>Alfred</strong> 的设置，在<code>「Feature」</code>菜单下的<code>「Snippets」</code>一项中将<code>「Automatically expand snippets by keyword」</code>勾选并按照指示将 <code>Alfred</code> 添加为辅助功能中的一项，方可打开。</p>
+<p><img src="http://o88okth1x.bkt.clouddn.com/imac_84bdd763c70fbafbb0243c02e122cb7f.png-960.jpg" alt=""></p>
+<p>接着，将你需要的 <code>Snippets</code> 分组添加到 <strong>Alfred</strong>，比如你常用的邮箱就可以添加为 <code>Snippets</code> 以<code>「;em」</code>这样的关键词来快速输入，同时 <strong>Alfred 3</strong> 还支持<code>{time}</code>、<code>{date}</code>、<code>{clipboard}</code> 这样的变量参数，写在 <code>Snippets</code> 的内容中可以在文本输出时显示为当时的时间、日期和剪贴板内容。如果你暂时想不到应该添加一些什么，你还可以添加按钮边上的<code>「Get Collections」</code>来添加 <strong>Alfred</strong> 官方推荐的 <code>Snippets</code>。</p>
+<p>注意，<strong>Alfred 3</strong> 仍然保持了了部分二代的设计思路，它的 <code>Snippets</code> 并不是在你打开自动扩展之后就默认都会自动扩展的，你需要在想要自动扩展的 <code>Snippets</code> 的<code>「A→」</code>一栏中勾选才行。</p>
+<h2 id="深度模块化的-Workflow"><a href="#深度模块化的-Workflow" class="headerlink" title="深度模块化的 Workflow"></a>深度模块化的 <code>Workflow</code></h2><p>这一次 <strong>Alfred</strong> 更新最大的就是 <code>Workflow</code> 功能。作为 <strong>Alfred</strong> 的核心功能，<code>Workflow</code> 为 <strong>Alfred</strong> 带来了无与伦比的可扩展性，并让 <strong>Alfred</strong> 成为了几乎可以完成一切自动化的终极效率工具。<strong>Alfred</strong> 的 <code>Workflow</code> 功能支持 J<code>avaScript、AppleScript、bash、zsh、PHP、Ruby、Python</code> 以及<code>Perl</code>，并且类似<code>iOS</code>系统上的 <code>Workflow</code> 应用，提供各种程序模块来让用户像搭乐高积木一样的来搭建自己的 <code>Workflow</code>。</p>
+<p>在 <strong>Alfred 2</strong> 中 <code>Workflow</code> 功能已经非常的强大，但大多数功能贴心好用的 <code>Workflow</code> 还是主要由程序语言来实现，且在编辑过程中有着诸多的不方便2。</p>
+<p>这一次，在吸取了二代经验之后，<strong>Alfred 3</strong> 对 <code>Workflow</code> 的易用性进行了彻底的设计，添加了大量的新程序模块，并让图形化编辑过程尽可能的贴近普通用户习惯，加入了程序块的自由拖拽，同时还新增了注释功能以及颜色标注，让 <code>Workflow</code> 尽可能的摆脱编程的束缚。</p>
+<p><img src="http://o88okth1x.bkt.clouddn.com/imac_322e838cf6a8769d4c33788f48f43998.png-960.jpg" alt=""></p>
+<p>Alfred 3 一共新增了 10 个新的模块，上图中以红色标出的即是新增的功能模块，其中 8 个模块组成了一个全新的模块大类「Utilities」，也就是实用工具模块大类。</p>
+<p>这 8 个模块分别是：</p>
+<pre><code>- Arg / Var 变量设定模块，可以将当前的输入值赋值给一变量，类似 iOS 上 Workflow 应用的 Set Variable 动作，在之后的流程中可反复调用。
+- Filter 条件过滤模块，相当于 if...then... 条件语句，通过判断条件值来选择是否执行下一步。
+- JSON Config 数据存储模块，可以将变量等数据以 JSON 格式存储起来。
+- Junction 整理模块，可以将多条输入整理在一个节点处再分发出去，降低 Workflow 流程图中的线条复杂度。
+- Delay 延时触发模块，可以将后续流程延后执行。
+- Transform 文字处理模块，可以对输入的字符串进行诸如去掉空格，全转为大写等操作。
+- Replace 替换模块，可以将目标变量或字符替换为所需变量或字符。
+- Bug 程序错误查找模块，可以让你对单个步骤的运行情况进行分析。
+</code></pre><p>这八个全新模块的加入，给 <strong>Alfred</strong> 的 <code>Workflow</code> 创建的难度带来了本质性的改变，特别是 <code>Arg／Var ，Filter，Delay</code>三个模块，将变量、条件语句以及延迟三种在编辑 Workflow 中经常要用到，但却又需要编程知识才能实现的功能，直接变成了可简单拖拽组合的模块。通过这几个新增模块，你不需要懂编程也可以快速编辑一个简单的 <code>Workflow</code> 了。</p>
+<p>剩下两个新加入的模块分别是<code>「File Filter」</code>和<code>「Dictionary Filter」</code>，是对原本过滤器模块大类的补充，分别支持设定文件类型和目录等来搜索文件，以及支持设定语言来搜索 OS X 内置词典。</p>
+<p>对于一个普通的用户来说，利用现有的新模块建立一个 <code>Workflow</code> 相比以前简单了太多，很多情况下不需要写任何一行代码就可以完成。普通用户或许不会从头写一个 <strong>Alfred</strong> 的 <code>Workflow</code> ，但修改别人的 <code>Workflow</code> 来适应自己的工作流也变简单了，让普通用户去结合自身需求使用 <code>Workflow</code> 的门槛大大减小。下面是官方给出的一个「待办事项列表」<code>Workflow</code> 的结构图，全部由模块组成并附有详细的说明，整个过程一目了然。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>作为老牌效率软件，<strong>Alfred</strong> 的这次大版本升级，隐隐有集各大效率软件功能于一身的趋势。除了基础的功能扩展变多之外，<code>Workflow</code> 编辑的易读性与模块化让 <strong>Alfred</strong> 的功能扩展变得更为友好，虽然仍旧需要基础的编程思维，但对编程语言的需求已经大大减小，向着「效率用户的乐高工具箱」又前进了一大步。</p>
+<p>你需要剪贴板扩展？<strong>Alfred 3</strong> 可以满足你。你需要类似 TextExpander 那样的短语自动扩展软件？<strong>Alfred 3</strong> 可以满足你。你不懂编程语言但是想建立自己的一个自动处理 <code>Workflow</code> ？<strong>Alfred 3</strong> 也可以满足你。</p>
+<p>Mac 上最强的效率「工具台」应用，无出其右。这顶小帽子，早已不仅仅是一个效率启动器。</p>
+<hr>
+<h2 id="软件分享"><a href="#软件分享" class="headerlink" title="软件分享"></a>软件分享</h2><p><strong>Alfred 3.0</strong> <a href="http://pan.baidu.com/s/1pKNZeRL" target="_blank" rel="external">软件下载地址</a> <code>密码: 2f5h</code></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/效率工具/" rel="tag">#效率工具</a>
+          
+            <a href="/tags/神器/" rel="tag">#神器</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/06/09/『RIME』调效笔记/" rel="next" title="『RIME』调效笔记">
+                <i class="fa fa-chevron-left"></i> 『RIME』调效笔记
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/06/10/Print Inspiration- Business Cards/" rel="prev" title="Print Inspiration-Business Cards">
+                Print Inspiration-Business Cards <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.png"
+               alt="Vivian5T" />
+          <p class="site-author-name" itemprop="name">Vivian5T</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">12</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://www.vivian5t.com" target="_blank" title="Portfolio">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  Portfolio
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://vivian5t.github.io/" target="_blank" title="Blog">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  Blog
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/your-user-name" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.pinterest.com" target="_blank" title="Pinterest">
+                  
+                    <i class="fa fa-fw fa-pinterest"></i>
+                  
+                  Pinterest
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#效率神器"><span class="nav-number">1.</span> <span class="nav-text">效率神器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#终于自由的自定义主题"><span class="nav-number">2.</span> <span class="nav-text">终于自由的自定义主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#支持类型更丰富的剪贴板增强"><span class="nav-number">3.</span> <span class="nav-text">支持类型更丰富的剪贴板增强</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#野心勃勃的短语快捷输入"><span class="nav-number">4.</span> <span class="nav-text">野心勃勃的短语快捷输入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#深度模块化的-Workflow"><span class="nav-number">5.</span> <span class="nav-text">深度模块化的 Workflow</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">6.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#软件分享"><span class="nav-number">7.</span> <span class="nav-text">软件分享</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Vivian5T</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("oryweKW43DmBX7TDiEGRwVzc-gzGzoHsz", "zFnCS7cahs9fg4vRvqyfy8yV");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+</body>
+</html>
